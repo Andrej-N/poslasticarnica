@@ -78,7 +78,7 @@
                 <span class="hero__title-line" data-delay="1">priča priču</span>
             </h1>
             <p class="hero__subtitle">Tradicija ukusa od 1979. godine</p>
-            <a href="#galerija" class="hero__cta">Pogledaj naše torte</a>
+            <a href="#galerija" class="hero__cta">Pogledaj naše kreacije</a>
         </div>
         <div class="hero__scroll-hint" aria-hidden="true">
             <span>Skroluj</span>
@@ -92,19 +92,19 @@
             <span>Torte za rođendane</span><span class="marquee__dot"></span>
             <span>Svadbene torte</span><span class="marquee__dot"></span>
             <span>Dečije torte</span><span class="marquee__dot"></span>
-            <span>Custom dizajn</span><span class="marquee__dot"></span>
+            <span>Kolačići</span><span class="marquee__dot"></span>
             <span>Čokoladne torte</span><span class="marquee__dot"></span>
-            <span>Voćne torte</span><span class="marquee__dot"></span>
+            <span>Baklava</span><span class="marquee__dot"></span>
             <span>Torte sa porukom</span><span class="marquee__dot"></span>
-            <span>Torte za proslave</span><span class="marquee__dot"></span>
+            <span>Išleri</span><span class="marquee__dot"></span>
             <span>Torte za rođendane</span><span class="marquee__dot"></span>
             <span>Svadbene torte</span><span class="marquee__dot"></span>
             <span>Dečije torte</span><span class="marquee__dot"></span>
-            <span>Custom dizajn</span><span class="marquee__dot"></span>
+            <span>Kolačići</span><span class="marquee__dot"></span>
             <span>Čokoladne torte</span><span class="marquee__dot"></span>
-            <span>Voćne torte</span><span class="marquee__dot"></span>
+            <span>Baklava</span><span class="marquee__dot"></span>
             <span>Torte sa porukom</span><span class="marquee__dot"></span>
-            <span>Torte za proslave</span><span class="marquee__dot"></span>
+            <span>Išleri</span><span class="marquee__dot"></span>
         </div>
     </div>
 
@@ -170,77 +170,203 @@
     <section class="gallery" id="galerija" aria-labelledby="gallery-heading">
         <div class="gallery__intro">
             <h2 class="gallery__heading split-heading" id="gallery-heading">Naše kreacije</h2>
-            <p class="gallery__sub reveal-text">Kliknite na tortu da je vidite izbliza.</p>
+            <p class="gallery__sub reveal-text">Kliknite na sliku da je vidite izbliza.</p>
+            <div class="gallery__filters" role="tablist" aria-label="Filter galerije">
+                <button class="gallery__filter gallery__filter--active" data-filter="sve" role="tab" aria-selected="true">Sve</button>
+                <button class="gallery__filter" data-filter="torta" role="tab" aria-selected="false">Torte</button>
+                <button class="gallery__filter" data-filter="kolacic" role="tab" aria-selected="false">Kolačići</button>
+            </div>
         </div>
 
         <div class="gallery__grid">
-            <article class="gallery__item">
+            <!-- TORTE -->
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/16BACDCF-3FB3-4B58-9E0D-B3560EAC6455.JPG" alt="Raskošna čokoladna drip torta sa Ferrero Rocher i Kinder čokoladicama" loading="lazy">
                 <div class="gallery__item-info"><h3>Čokoladna fantazija</h3><p>Drip torta za ljubitelje čokolade</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/E364BDE6-6C0C-49C7-B5FC-BF1A051F5CC6.JPG" alt="Elegantna crna torta sa zlatnom krunom i natpisom Srećan 16. Rođendan za Đorđa" loading="lazy">
                 <div class="gallery__item-info"><h3>Zlatna kruna</h3><p>Kraljevski rođendan u crnom i zlatu</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/1D9F1FD7-45F7-4D04-BA09-3B8279D6B443.JPG" alt="Dvospratna LOL Surprise torta u roze i ljubičastoj boji za devojčice" loading="lazy">
                 <div class="gallery__item-info"><h3>LOL Surprise</h3><p>Za najmlađe princeze</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/010B3880-A465-4839-91FA-ED98CAECB8F6.JPG" alt="Tradicionalna baklava, tulumbe i kadaif u metalnim posudama" loading="lazy">
+                <div class="gallery__item-info"><h3>Orijentalni slatkiši</h3><p>Baklava, tulumbe i kadaif</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/61AA79A9-371F-43A6-A64D-89B1484215C5.JPG" alt="Roze torta u obliku srca sa natpisom Srećan Rođendan" loading="lazy">
                 <div class="gallery__item-info"><h3>Od srca</h3><p>Za rođendane punih emocija</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/0E3DB79C-C4DA-4341-AC1C-72C5362061ED.JPG" alt="Šampite sa šlagom i mrvicama oraha u metalnoj posudi" loading="lazy">
+                <div class="gallery__item-info"><h3>Šampite</h3><p>Nežne, sa šlagom i orasima</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/DABFA0D7-7354-439F-BE22-82FDDC0EE2CB.JPG" alt="Bela torta sa crvenim srcima i natpisom The Best Husband u obliku igre iks-oks" loading="lazy">
                 <div class="gallery__item-info"><h3>The Best Husband</h3><p>Iks-oks sa ljubavlju</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/56902687-B6D8-4B41-9FA8-55D45A92C913.JPG" alt="Plava torta sa morskom tematikom, ajkulom i palmama za dečake" loading="lazy">
                 <div class="gallery__item-info"><h3>Morska avantura</h3><p>Zaronite u svet mašte</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/49C001FD-3FD1-4478-BB32-A08BF5508F12.JPG" alt="Čokoladne kuglice sa šarenim mrvicama u papirnim korpicama" loading="lazy">
+                <div class="gallery__item-info"><h3>Čokoladne kuglice</h3><p>Sa šarenim mrvicama</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/67394ACB-C664-4E84-917E-5C102F58117A.JPG" alt="Dvospratna plavo-bela fudbalska torta sa Messi motivom broj 10" loading="lazy">
                 <div class="gallery__item-info"><h3>Gol za pamćenje</h3><p>Za male i velike fudbalere</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/D4E41848-BEE1-4C14-8E61-B6673DC25444.JPG" alt="Roze torta u obliku srca sa natpisom Žena Majka Kraljica i Ferrero Rocher dekoracijom" loading="lazy">
                 <div class="gallery__item-info"><h3>Žena, Majka, Kraljica</h3><p>Za najvažniju osobu u životu</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/7EB8717A-2920-4D9F-B0C3-2C29EEBB4B40.JPG" alt="Svežepečena baklava u metalnoj posudi" loading="lazy">
+                <div class="gallery__item-info"><h3>Domaća baklava</h3><p>Hrskava i sočna, po starom receptu</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/03C1E63D-5073-4D95-91A6-F31F7E6892A4.JPG" alt="Bela torta u obliku srca sa brojem 53 i crvenim srcima" loading="lazy">
+                <div class="gallery__item-info"><h3>Srce za jubilej</h3><p>Torta za 53. godišnjicu</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/5ACFCE20-6996-40C5-ADF1-569B41A516CB.JPG" alt="Torta sa šljivama i belom glazurom sa smešnom porukom za šefa" loading="lazy">
                 <div class="gallery__item-info"><h3>Slatka poruka</h3><p>Recite to tortom — sa humorom</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/B14159FA-65E0-4B6B-8ACD-510198BE8FC2.JPG" alt="Ekleri sa čokoladom i krofnice sa kremom u vitrini" loading="lazy">
+                <div class="gallery__item-info"><h3>Ekleri i krofnice</h3><p>Kremasti klasici iz vitrine</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/6EF30769-AA4C-4196-858F-FEC1FF867F86.JPG" alt="Plava Peppa Pig torta sa cvetićima za četvrti rođendan" loading="lazy">
                 <div class="gallery__item-info"><h3>Peppa svet</h3><p>Omiljeni crtani na vašoj torti</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/89341D61-5AEE-4BA7-9793-0144D1322024.JPG" alt="Hello Kitty torta sa crvenim srcima za deseti rođendan Jelene" loading="lazy">
+                <div class="gallery__item-info"><h3>Hello Kitty</h3><p>Za Jelenin 10. rođendan</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/CC9B504E-372D-4F48-86B1-FC58C2F7E8E8.JPG" alt="Čokoladom preliveni išler kolačići na plehu u pekari" loading="lazy">
+                <div class="gallery__item-info"><h3>Išler kolačići</h3><p>Naš potpis — čokoladni išleri</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/C00D0AE6-8D4B-4206-AEAA-A2AA1F25FB99.JPG" alt="Roze-bela torta sa Marie mačkom iz Aristokatsa za prvi rođendan devojčice Eme" loading="lazy">
                 <div class="gallery__item-info"><h3>Princeza Ema</h3><p>Aristokats torta za prvi rođendan</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/9F846429-8143-4B64-9841-AA2342357390.JPG" alt="Kokos kuglice i kuglice sa orasima u vitrini poslastičarnice" loading="lazy">
+                <div class="gallery__item-info"><h3>Kuglice</h3><p>Kokos i orah — nežne i sočne</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/63E0191A-DBCF-4280-80BB-19308E22109B.JPG" alt="Ljubičasto-plava torta sa roze leptirima i cvetovima" loading="lazy">
+                <div class="gallery__item-info"><h3>Let leptira</h3><p>Šarena torta iz bajke</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/81F619D0-CC24-4E2F-9483-3F757E4E0CA8.JPG" alt="Bela torta sa natpisom Bye Bye Single Life za devojačko veče" loading="lazy">
                 <div class="gallery__item-info"><h3>Bye Bye Single Life</h3><p>Za devojačko veče</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/CBB4EBDA-8B49-4D2D-AB4F-EE131B0100A5.JPG" alt="Kremasti kolači sa čokoladnom glazurom u parčadima" loading="lazy">
+                <div class="gallery__item-info"><h3>Kremasti kolači</h3><p>Slojeviti, sa vanilom i čokoladom</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/924C2518-87DE-4282-BA9E-144F872E3CAA.JPG" alt="Žuta torta sa smešnom porukom i crtežom za kolege" loading="lazy">
                 <div class="gallery__item-info"><h3>Za najbolje kolege</h3><p>Humor u jednom zalogaju</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/9F0C0322-EF7D-4328-B2C0-5C4523C213DE.JPG" alt="Išler kolačići sa čokoladnom glazurom na plehu" loading="lazy">
+                <div class="gallery__item-info"><h3>Domaći išleri</h3><p>Ručno pravljeni, sa ljubavlju</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/CDE87767-AB80-429F-9E3F-2BB69B593F05.JPG" alt="Roze torta u obliku srca sa mašnicama i natpisom Volimo vas sa zlatnim perlicama" loading="lazy">
                 <div class="gallery__item-info"><h3>Volimo vas</h3><p>Ljubav sa mašnicama</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/9E12D49E-CC2F-49A2-953F-87BB7B0389DB.JPG" alt="Dvospratna roze torta sa kremastim rozetama" loading="lazy">
+                <div class="gallery__item-info"><h3>Roze elegancija</h3><p>Dvospratna torta od ruža</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/CDCAD11F-DC66-4B0B-ACBB-A527F7B7F4F7.JPG" alt="Kokos kuglice i kuglice sa orasima u vitrini" loading="lazy">
+                <div class="gallery__item-info"><h3>Slatke kuglice</h3><p>Kokos, orah i čokolada</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/E5CCCD8C-80C6-4B47-9A2E-FDBFD6A1E13E.JPG" alt="Dvospratna plavo-bela fudbalska torta sa grbom FK Budućnost i fudbalskim loptama za Luku" loading="lazy">
                 <div class="gallery__item-info"><h3>Navijačka groznica</h3><p>Za navijače FK Budućnost</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/57B9CDA1-EEB8-4D04-90F1-7B3F40E7D0CA.JPG" alt="Bela torta sa natpisom Sedamnaest i crvenim srcima" loading="lazy">
+                <div class="gallery__item-info"><h3>Sedamnaest</h3><p>Slatki ulazak u sedamnaestu</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/D762B2EB-8388-42C3-9501-EDA16F2C7356.JPG" alt="Kokos-čokoladne kocke i kuglice sa orasima u vitrini" loading="lazy">
+                <div class="gallery__item-info"><h3>Rafaelo i čokoladne kocke</h3><p>Mešavina ukusa u svakom zalogaju</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/CB830929-9367-431C-A00D-6A85E8A9A702.JPG" alt="Roze torta u obliku srca sa natpisom Six Months" loading="lazy">
+                <div class="gallery__item-info"><h3>Six Months</h3><p>Pola godine ljubavi</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/7001E38C-F960-40EB-8DD3-47FFA5745225.JPG" alt="Moskva torta i cheesecake parčad u vitrini poslastičarnice" loading="lazy">
+                <div class="gallery__item-info"><h3>Iz vitrine</h3><p>Moskva torta i cheesecake</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/A55B2D38-38F6-4903-A608-63D73B09986A.JPG" alt="Bela torta sa smešnim crtežom i natpisom o pronalasku kod stovarišta za 16. godišnjicu" loading="lazy">
                 <div class="gallery__item-info"><h3>Humor koji se pamti</h3><p>Torta kaže sve</p></div>
             </article>
-            <article class="gallery__item">
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/D2314996-4D6E-4D80-8329-FB986723114E.JPG" alt="Tiramisu u čašama i razni kolači u vitrini poslastičarnice" loading="lazy">
+                <div class="gallery__item-info"><h3>Tiramisu & Co.</h3><p>Tiramisu u čaši i kolači iz vitrine</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/1C7720C2-7EB1-4EC2-A8E6-E13D265AB570.JPG" alt="Elegantna belo-roze torta sa kremastom dekoracijom" loading="lazy">
+                <div class="gallery__item-info"><h3>Roze klasika</h3><p>Elegancija u svakom detalju</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/DA49F0B7-E578-4614-A148-450A2C97A60D.JPG" alt="Barbi torta sa lutkom u roze haljini od krema" loading="lazy">
+                <div class="gallery__item-info"><h3>Barbi princeza</h3><p>San svake devojčice</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/E6246C6F-63E6-4E9A-9D5C-BA32FC50620F.JPG" alt="Kremšnite sa višnjama u lisntatom testu" loading="lazy">
+                <div class="gallery__item-info"><h3>Kremšnite</h3><p>Sa višnjama, u lisnatom testu</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/BEA87ECE-6C2A-4EA8-BC29-B51E66BE1B96.JPG" alt="Čokoladna torta u obliku srca sa natpisom Happy Birthday" loading="lazy">
+                <div class="gallery__item-info"><h3>Čokoladno srce</h3><p>Happy Birthday u čokoladi</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
                 <img src="imgs/F6C11B61-68EC-4FE4-BFAA-E535F284137B.JPG" alt="Elegantna bela torta sa crvenim cvetnim laticama i zlatnim perlicama za 19. rođendan" loading="lazy">
                 <div class="gallery__item-info"><h3>Cvetni san</h3><p>Elegancija crvenih latica</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/0606763C-8516-4541-8DF3-43867ABF3F08.JPG" alt="Čokoladne mini torte sa belom čokoladom u vitrini" loading="lazy">
+                <div class="gallery__item-info"><h3>Čokoladne tortice</h3><p>Mini torte za svaki dan</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/1CB17228-458F-4E99-BE1A-EEF15592194A.JPG" alt="Torta sa natpisom Srećno ti bilo Vilo i crvenim ružama" loading="lazy">
+                <div class="gallery__item-info"><h3>Srećno ti bilo</h3><p>Torta sa ružama i toplom porukom</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/EB06B0EC-3BA7-4C18-929A-841C505FA88D.JPG" alt="Roze-čokoladna torta sa natpisom Srećan Rođendan" loading="lazy">
+                <div class="gallery__item-info"><h3>Srećan rođendan</h3><p>Klasik koji nikad ne razočara</p></div>
+            </article>
+            <article class="gallery__item" data-category="kolacic">
+                <img src="imgs/FCB02385-6C1A-4453-9E26-11D91A55E95E.JPG" alt="Vitrina poslastičarnice Išler sa raznim kolačima, makaronima i šlagom" loading="lazy">
+                <div class="gallery__item-info"><h3>Naša vitrina</h3><p>Izbor kolača za svačiji ukus</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/D7C14AD7-8701-4046-B0BD-C55437EC3F36.JPG" alt="Cheesecake sa crvenim voćem i glazurom" loading="lazy">
+                <div class="gallery__item-info"><h3>Voćni cheesecake</h3><p>Kremast sa prelivom od šumskog voća</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/D5625A30-8413-4FD5-BFD5-E783FEC67B5A.JPG" alt="Roze torta sa mačkom iz Aristokatsa za prvi rođendan Bore" loading="lazy">
+                <div class="gallery__item-info"><h3>Mačka Bora</h3><p>Aristokats torta za prvi rođendan</p></div>
+            </article>
+            <article class="gallery__item" data-category="torta">
+                <img src="imgs/2E398D4C-E2DD-4C48-AC5D-64F3E044152F.JPG" alt="Ljubičasta torta sa srcima i krunom za osmi rođendan Teodore" loading="lazy">
+                <div class="gallery__item-info"><h3>Princeza Teodora</h3><p>Torta sa srcima za 8. rođendan</p></div>
             </article>
         </div>
 
@@ -250,8 +376,8 @@
     <section class="cta" aria-labelledby="cta-heading">
         <div class="cta__container">
             <h2 class="cta__heading scale-heading" id="cta-heading">Zamislite svoju savršenu tortu</h2>
-            <p class="cta__text">Mi ćemo je napraviti. Svaka torta je unikatna, baš kao i vaša proslava.</p>
-            <a href="#kontakt" class="cta__button">Poručite tortu</a>
+            <p class="cta__text">Mi ćemo je napraviti. Svaka torta i svaki kolač su unikatni, baš kao i vaša proslava.</p>
+            <a href="#kontakt" class="cta__button">Poručite sada</a>
         </div>
     </section>
 
