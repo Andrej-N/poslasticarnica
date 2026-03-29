@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="sr" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Poslastičarnica Išler - Ručno pravljene torte i kolači od 1979. Poručite tortu za svaku priliku - rođendane, svadbe, proslave. Tradicija kvaliteta već preko 45 godina.">
+    <meta name="keywords" content="torte, poslastičarnica, kolači, Išler, torte za rođendan, svadbene torte, custom torte, poslastice, naručivanje torti">
+    <meta name="author" content="Poslastičarnica Išler">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Poslastičarnica Išler | Tradicija od 1979.">
+    <meta property="og:description" content="Ručno pravljene torte i kolači za svaku priliku. Poručite vašu savršenu tortu.">
+    <meta property="og:image" content="imgs/logo.png">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="sr_RS">
+
+    <title>Poslastičarnica Išler | Ručno pravljene torte od 1979.</title>
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Bakery",
+        "name": "Poslastičarnica Išler",
+        "description": "Ručno pravljene torte i kolači od 1979. godine.",
+        "foundingDate": "1979",
+        "image": "imgs/logo.png",
+        "priceRange": "$$",
+        "servesCuisine": "Torte, Kolači, Poslastice",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Torte i kolači",
+            "itemListElement": [
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Torte za rođendan" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Svadbene torte" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Dečije torte" } },
+                { "@type": "Offer", "itemOffered": { "@type": "Product", "name": "Custom torte" } }
+            ]
+        }
+    }
+    </script>
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav" id="nav" aria-label="Glavna navigacija">
+        <div class="nav__logo">
+            <img src="imgs/logo.png" alt="Išler logo" width="50" height="50" loading="eager">
+        </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Otvori meni" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav__links" id="navLinks">
+            <li><a href="#pocetna">Početna</a></li>
+            <li><a href="#prica">Naša priča</a></li>
+            <li><a href="#galerija">Galerija</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="pocetna">
+        <div class="hero__bg"></div>
+        <div class="hero__content">
+            <div class="hero__logo-reveal">
+                <img src="imgs/logo.png" alt="Poslastičarnica Išler - Ručno pravljene torte od 1979." class="hero__logo" width="220" height="220" loading="eager">
+            </div>
+            <h1 class="hero__title">
+                <span class="hero__title-line" data-delay="0">Svaki zalogaj</span>
+                <span class="hero__title-line" data-delay="1">priča priču</span>
+            </h1>
+            <p class="hero__subtitle">Tradicija ukusa od 1979. godine</p>
+            <a href="#galerija" class="hero__cta">Pogledaj naše torte</a>
+        </div>
+        <div class="hero__scroll-hint" aria-hidden="true">
+            <span>Skroluj</span>
+            <div class="hero__scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- Marquee Strip -->
+    <div class="marquee" aria-hidden="true">
+        <div class="marquee__inner">
+            <span>Torte za rođendane</span><span class="marquee__dot"></span>
+            <span>Svadbene torte</span><span class="marquee__dot"></span>
+            <span>Dečije torte</span><span class="marquee__dot"></span>
+            <span>Custom dizajn</span><span class="marquee__dot"></span>
+            <span>Čokoladne torte</span><span class="marquee__dot"></span>
+            <span>Voćne torte</span><span class="marquee__dot"></span>
+            <span>Torte sa porukom</span><span class="marquee__dot"></span>
+            <span>Torte za proslave</span><span class="marquee__dot"></span>
+            <span>Torte za rođendane</span><span class="marquee__dot"></span>
+            <span>Svadbene torte</span><span class="marquee__dot"></span>
+            <span>Dečije torte</span><span class="marquee__dot"></span>
+            <span>Custom dizajn</span><span class="marquee__dot"></span>
+            <span>Čokoladne torte</span><span class="marquee__dot"></span>
+            <span>Voćne torte</span><span class="marquee__dot"></span>
+            <span>Torte sa porukom</span><span class="marquee__dot"></span>
+            <span>Torte za proslave</span><span class="marquee__dot"></span>
+        </div>
+    </div>
+
+    <!-- Story Section -->
+    <section class="story" id="prica" aria-labelledby="story-heading">
+        <div class="story__container">
+            <div class="story__eyebrow reveal-text">Naša priča</div>
+            <h2 class="story__heading split-heading" id="story-heading">
+                Više od četiri decenije stvaramo slatke uspomene
+            </h2>
+            <div class="story__body">
+                <div class="story__text-block">
+                    <p>Od 1979. godine, porodica Išler sa ljubavlju pravi torte koje pretvaraju svaku proslavu u nezaboravan trenutak. Svaka torta je unikatno umetničko delo — ručno pravljeno, sa pažnjom prema svakom detalju.</p>
+                </div>
+                <div class="story__text-block">
+                    <p>Bilo da je u pitanju dečiji rođendan, venčanje ili jednostavno želja za savršenim zalogajem — mi smo tu da vaše najslađe snove pretvorimo u stvarnost.</p>
+                </div>
+            </div>
+            <div class="story__stats reveal-text">
+                <div class="stat">
+                    <span class="stat__number" data-target="45">0</span>
+                    <span class="stat__suffix">+</span>
+                    <span class="stat__label">Godina tradicije</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="10000">0</span>
+                    <span class="stat__suffix">+</span>
+                    <span class="stat__label">Zadovoljnih kupaca</span>
+                </div>
+                <div class="stat">
+                    <span class="stat__number" data-target="500">0</span>
+                    <span class="stat__suffix">+</span>
+                    <span class="stat__label">Vrsta torti</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Marquee Strip 2 -->
+    <div class="marquee marquee--reverse" aria-hidden="true">
+        <div class="marquee__inner">
+            <span>Od 1979.</span><span class="marquee__dot"></span>
+            <span>Ručna izrada</span><span class="marquee__dot"></span>
+            <span>Porodična tradicija</span><span class="marquee__dot"></span>
+            <span>Unikatni dizajni</span><span class="marquee__dot"></span>
+            <span>Svež ukus</span><span class="marquee__dot"></span>
+            <span>Premium sastojci</span><span class="marquee__dot"></span>
+            <span>Dostava</span><span class="marquee__dot"></span>
+            <span>Porudžbina po želji</span><span class="marquee__dot"></span>
+            <span>Od 1979.</span><span class="marquee__dot"></span>
+            <span>Ručna izrada</span><span class="marquee__dot"></span>
+            <span>Porodična tradicija</span><span class="marquee__dot"></span>
+            <span>Unikatni dizajni</span><span class="marquee__dot"></span>
+            <span>Svež ukus</span><span class="marquee__dot"></span>
+            <span>Premium sastojci</span><span class="marquee__dot"></span>
+            <span>Dostava</span><span class="marquee__dot"></span>
+            <span>Porudžbina po želji</span><span class="marquee__dot"></span>
+        </div>
+    </div>
+
+    <!-- Gallery — Masonry Grid -->
+    <section class="gallery" id="galerija" aria-labelledby="gallery-heading">
+        <div class="gallery__intro">
+            <h2 class="gallery__heading split-heading" id="gallery-heading">Naše kreacije</h2>
+            <p class="gallery__sub reveal-text">Kliknite na tortu da je vidite izbliza.</p>
+        </div>
+
+        <div class="gallery__grid">
+            <article class="gallery__item">
+                <img src="imgs/16BACDCF-3FB3-4B58-9E0D-B3560EAC6455.JPG" alt="Raskošna čokoladna drip torta sa Ferrero Rocher i Kinder čokoladicama" loading="lazy">
+                <div class="gallery__item-info"><h3>Čokoladna fantazija</h3><p>Drip torta za ljubitelje čokolade</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/E364BDE6-6C0C-49C7-B5FC-BF1A051F5CC6.JPG" alt="Elegantna crna torta sa zlatnom krunom i natpisom Srećan 16. Rođendan za Đorđa" loading="lazy">
+                <div class="gallery__item-info"><h3>Zlatna kruna</h3><p>Kraljevski rođendan u crnom i zlatu</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/1D9F1FD7-45F7-4D04-BA09-3B8279D6B443.JPG" alt="Dvospratna LOL Surprise torta u roze i ljubičastoj boji za devojčice" loading="lazy">
+                <div class="gallery__item-info"><h3>LOL Surprise</h3><p>Za najmlađe princeze</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/61AA79A9-371F-43A6-A64D-89B1484215C5.JPG" alt="Roze torta u obliku srca sa natpisom Srećan Rođendan" loading="lazy">
+                <div class="gallery__item-info"><h3>Od srca</h3><p>Za rođendane punih emocija</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/DABFA0D7-7354-439F-BE22-82FDDC0EE2CB.JPG" alt="Bela torta sa crvenim srcima i natpisom The Best Husband u obliku igre iks-oks" loading="lazy">
+                <div class="gallery__item-info"><h3>The Best Husband</h3><p>Iks-oks sa ljubavlju</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/56902687-B6D8-4B41-9FA8-55D45A92C913.JPG" alt="Plava torta sa morskom tematikom, ajkulom i palmama za dečake" loading="lazy">
+                <div class="gallery__item-info"><h3>Morska avantura</h3><p>Zaronite u svet mašte</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/67394ACB-C664-4E84-917E-5C102F58117A.JPG" alt="Dvospratna plavo-bela fudbalska torta sa Messi motivom broj 10" loading="lazy">
+                <div class="gallery__item-info"><h3>Gol za pamćenje</h3><p>Za male i velike fudbalere</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/D4E41848-BEE1-4C14-8E61-B6673DC25444.JPG" alt="Roze torta u obliku srca sa natpisom Žena Majka Kraljica i Ferrero Rocher dekoracijom" loading="lazy">
+                <div class="gallery__item-info"><h3>Žena, Majka, Kraljica</h3><p>Za najvažniju osobu u životu</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/5ACFCE20-6996-40C5-ADF1-569B41A516CB.JPG" alt="Torta sa šljivama i belom glazurom sa smešnom porukom za šefa" loading="lazy">
+                <div class="gallery__item-info"><h3>Slatka poruka</h3><p>Recite to tortom — sa humorom</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/6EF30769-AA4C-4196-858F-FEC1FF867F86.JPG" alt="Plava Peppa Pig torta sa cvetićima za četvrti rođendan" loading="lazy">
+                <div class="gallery__item-info"><h3>Peppa svet</h3><p>Omiljeni crtani na vašoj torti</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/C00D0AE6-8D4B-4206-AEAA-A2AA1F25FB99.JPG" alt="Roze-bela torta sa Marie mačkom iz Aristokatsa za prvi rođendan devojčice Eme" loading="lazy">
+                <div class="gallery__item-info"><h3>Princeza Ema</h3><p>Aristokats torta za prvi rođendan</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/81F619D0-CC24-4E2F-9483-3F757E4E0CA8.JPG" alt="Bela torta sa natpisom Bye Bye Single Life za devojačko veče" loading="lazy">
+                <div class="gallery__item-info"><h3>Bye Bye Single Life</h3><p>Za devojačko veče</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/924C2518-87DE-4282-BA9E-144F872E3CAA.JPG" alt="Žuta torta sa smešnom porukom i crtežom za kolege" loading="lazy">
+                <div class="gallery__item-info"><h3>Za najbolje kolege</h3><p>Humor u jednom zalogaju</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/CDE87767-AB80-429F-9E3F-2BB69B593F05.JPG" alt="Roze torta u obliku srca sa mašnicama i natpisom Volimo vas sa zlatnim perlicama" loading="lazy">
+                <div class="gallery__item-info"><h3>Volimo vas</h3><p>Ljubav sa mašnicama</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/E5CCCD8C-80C6-4B47-9A2E-FDBFD6A1E13E.JPG" alt="Dvospratna plavo-bela fudbalska torta sa grbom FK Budućnost i fudbalskim loptama za Luku" loading="lazy">
+                <div class="gallery__item-info"><h3>Navijačka groznica</h3><p>Za navijače FK Budućnost</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/A55B2D38-38F6-4903-A608-63D73B09986A.JPG" alt="Bela torta sa smešnim crtežom i natpisom o pronalasku kod stovarišta za 16. godišnjicu" loading="lazy">
+                <div class="gallery__item-info"><h3>Humor koji se pamti</h3><p>Torta kaže sve</p></div>
+            </article>
+            <article class="gallery__item">
+                <img src="imgs/F6C11B61-68EC-4FE4-BFAA-E535F284137B.JPG" alt="Elegantna bela torta sa crvenim cvetnim laticama i zlatnim perlicama za 19. rođendan" loading="lazy">
+                <div class="gallery__item-info"><h3>Cvetni san</h3><p>Elegancija crvenih latica</p></div>
+            </article>
+        </div>
+
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" aria-labelledby="cta-heading">
+        <div class="cta__container">
+            <h2 class="cta__heading scale-heading" id="cta-heading">Zamislite svoju savršenu tortu</h2>
+            <p class="cta__text">Mi ćemo je napraviti. Svaka torta je unikatna, baš kao i vaša proslava.</p>
+            <a href="#kontakt" class="cta__button">Poručite tortu</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="kontakt" aria-labelledby="contact-heading">
+        <div class="contact__container">
+            <div class="contact__info reveal-text">
+                <h2 class="contact__heading" id="contact-heading">Kontaktirajte nas</h2>
+                <p class="contact__text">Javite nam se za porudžbine, pitanja ili da zajedno osmislimo vašu tortu iz snova.</p>
+                <div class="contact__details">
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <span>+381 XX XXX XXXX</span>
+                    </div>
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <span>info@isler.rs</span>
+                    </div>
+                    <div class="contact__item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <span>Adresa poslastičarnice</span>
+                    </div>
+                </div>
+            </div>
+            <form class="contact__form reveal-text" aria-label="Kontakt forma" onsubmit="return false;">
+                <div class="form__group">
+                    <label for="name" class="form__label">Vaše ime</label>
+                    <input type="text" id="name" name="name" class="form__input" required autocomplete="name">
+                </div>
+                <div class="form__group">
+                    <label for="phone" class="form__label">Telefon</label>
+                    <input type="tel" id="phone" name="phone" class="form__input" autocomplete="tel">
+                </div>
+                <div class="form__group">
+                    <label for="message" class="form__label">Vaša poruka</label>
+                    <textarea id="message" name="message" class="form__input form__textarea" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="form__submit">Pošaljite poruku</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__logo">
+                <img src="imgs/logo.png" alt="Išler" width="80" height="80" loading="lazy">
+                <p>Tradicija od 1979.</p>
+            </div>
+            <div class="footer__links">
+                <a href="#pocetna">Početna</a>
+                <a href="#prica">Naša priča</a>
+                <a href="#galerija">Galerija</a>
+                <a href="#kontakt">Kontakt</a>
+            </div>
+            <p class="footer__copy">&copy; 2026 Poslastičarnica Išler. Sva prava zadržana.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
